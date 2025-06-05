@@ -1,0 +1,19 @@
+Alembic:
+-- pip install alembic
+-- alembic init alembic
+
+Sozlash
+File: >> alembic.ini
+-- sqlalchemy.url = postgresql+psycopg2://postgres:1234@localhost:5436/test
+File: >> env.py
+-- from mymodel.db import Base
+-- target_metada = Base.metada
+
+Migration: class da qandaydur mayda detal o'zgatsa doim shu kod yoziladi.
+-- alembic revision --autogenerate -m "comment"
+-- alembic upgrade head
+
+Help:
+-- alembic downgrade -1
+-- alembic upgrade +1
+
