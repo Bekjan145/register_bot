@@ -190,6 +190,7 @@ async def cmd_delete(message: Message):
         else:
             await message.answer("Siz hali ro‘yxatdan o‘tmagansiz!")
 
+print()
 
 async def main() -> None:
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
